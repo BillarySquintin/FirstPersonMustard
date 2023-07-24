@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber";
-import { Experience } from "./components/Experience";
+import { BasketballGame } from "./components/BasketballGame";
 import { Suspense, useMemo } from "react";
 import { Physics  } from "@react-three/rapier";
-import { KeyboardControls, KeyboardControlsEntry } from "@react-three/drei";
+import { KeyboardControls } from "@react-three/drei";
 import React from "react";
 
 
@@ -33,7 +33,7 @@ function App() {
       <color attach="background" args={["#ececec"]} />
       <Suspense>
         <Physics debug >
-          <Experience />
+          <BasketballGame />
         </Physics>
       </Suspense>
     </Canvas>

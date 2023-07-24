@@ -1,14 +1,15 @@
 import { Box, Sphere, OrbitControls, Torus, useKeyboardControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-// import { AmbientLight, DirectionalLight } from "three";
 import { CuboidCollider, RigidBody, RapierRigidBody, quat} from "@react-three/rapier";
 import React from "react";
 import {useRef, useState} from "react";
 import * as THREE from 'three';
 import { Controls } from "../App";
-import { is } from "@react-three/fiber/dist/declarations/src/core/utils";
 
-export const Experience = () => {
+// YT Link: https://www.youtube.com/watch?v=OpYtwrtpePY
+// github: https://github.com/wass08/r3f-physics/tree/main
+
+export const BasketballGame = () => {
 const [hover, setHover] = useState(false);
 
 const ballman=useRef<RapierRigidBody>(null) ;
